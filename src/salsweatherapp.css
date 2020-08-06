@@ -7,7 +7,7 @@ h1 {
   font-size: 20px;
 }
 
-.current-location-btn {
+button {
   border-radius: 50%;
   font-size: 12px;
 }
