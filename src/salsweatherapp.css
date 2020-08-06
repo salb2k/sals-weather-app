@@ -8,8 +8,21 @@ h1 {
 }
 
 button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   border-radius: 20%;
   font-size: 13px;
+}
+
+input {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .scale {
@@ -36,15 +49,6 @@ h2:hover {
 .fa-sun {
   color: rgb(181, 181, 181);
   padding-top: 10px;
-}
-
-input {
-  width: 150px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-size: 15px;
-  cursor: pointer;
 }
 
 div.row {
