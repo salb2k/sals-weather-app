@@ -7,6 +7,11 @@ h1 {
   font-size: 20px;
 }
 
+.current-location-btn {
+  animation: bouncy 5s infinite linear;
+  border-radius: 30%;
+}
+
 .scale {
   cursor: pointer;
 }
