@@ -62,3 +62,8 @@ div.row {
   text-align: center;
   font-size: 10px;
 }
+
+.coded:hover {
+  box-shadow: 9px 9px 86px #388f4e;
+  cursor: pointer;
+}
