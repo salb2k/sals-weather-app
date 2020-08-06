@@ -51,3 +51,8 @@ div.row {
   box-shadow: 9px 9px 86px #d1fdff;
   cursor: pointer;
 }
+
+.coded {
+  text-align: center;
+  font-size: 10px;
+}
