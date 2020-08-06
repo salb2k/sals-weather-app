@@ -9,7 +9,8 @@ h1 {
 
 .current-location-btn {
   animation: bouncy 5s infinite linear;
-  border-radius: 30%;
+  border-radius: 50%;
+  font-size: 15px;
 }
 
 .scale {
