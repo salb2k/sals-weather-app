@@ -8,9 +8,8 @@ h1 {
 }
 
 .current-location-btn {
-  animation: bouncy 5s infinite linear;
   border-radius: 50%;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .scale {
@@ -45,6 +44,7 @@ input {
   margin: 0;
   box-sizing: border-box;
   font-size: 15px;
+  cursor: pointer;
 }
 
 div.row {
@@ -55,7 +55,6 @@ div.row {
 
 .card:hover {
   box-shadow: 9px 9px 86px #d1fdff;
-  cursor: pointer;
 }
 
 .coded {
