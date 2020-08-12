@@ -37,18 +37,13 @@ h2 {
   border-style: dotted;
   border-color: orange;
   border-radius: 50%;
-  height: 250px;
-  width: 260px;
+  height: 300px;
+  width: 300px;
   font-size: 30px;
 }
 
 h2:hover {
   box-shadow: 9px 9px 86px rgb(239, 221, 117);
-}
-
-.fa-sun {
-  color: rgb(181, 181, 181);
-  padding-top: 10px;
 }
 
 div.row {
