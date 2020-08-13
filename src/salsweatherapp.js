@@ -18,12 +18,12 @@ function accurateTime(date) {
 
 function showTemp(response) {
   console.log(response.data);
+  celsiusTemp = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#currentTemp").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#currentTemp").innerHTML = Math.round(celsiusTemp);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#wind").innerHTML =
+    Math.round.response.data.wind.speed;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 
@@ -65,6 +65,23 @@ function getLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+function showFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitChange = (celsiusTemp * 9) / 5 + 32;
+  let scaleChange = document.querySelector("#currentTemp");
+  scaleChange.innerHTML = Math.round(fahrenheitChange);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+}
+
+function showCelsius(event) {
+  event.preventDefault();
+  let scaleBack = document.querySelector("#currentTemp");
+  scaleBack.innerHTML = Math.round(celsiusTemp);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
 let timeDate = document.querySelector("#time");
 let now = new Date();
 timeDate.innerHTML = accurateTime(now);
@@ -74,5 +91,12 @@ citySearch.addEventListener("submit", handleSumbit);
 
 let currentLocationButton = document.querySelector("#current-location-btn");
 currentLocationButton.addEventListener("click", getLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", showFahrenheit);
+
+let celsiusTemp = null;
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsius);
 
 search("Baltimore");

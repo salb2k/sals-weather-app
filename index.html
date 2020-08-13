@@ -22,9 +22,7 @@
                 <br>
                 <br>
                 <div>
-                    <div class="scale">
-                        <span id="fahrenheit"> F° </span>
-                        <span id="celsius"> | C° </span> </br>
+    
                         Humidity: <span id="humidity"> </span> %</br>
                         Wind: <span id="wind"> </span> mph <br>
                         <span id="description"> ☁️ </span>
@@ -33,7 +31,10 @@
         <br>
         <h2>
             <span id="city"></span> <br>
-            <span id="currentTemp"></span>°C<br>
+            <span id="currentTemp"></span><br> 
+            <div class="clearfix scale">  <small>
+                <span id="fahrenheit" a href="#"> °F </span> |
+                <span id="celsius" a href="#" class="active">°C </span> </br></small>
             <div id="time"> <br> </div>
             <div class= "weatherTempIcon"></div>
             <img src= "http://openweathermap.org/img/wn/01d@2x.png" alt = "" id ="weather-icon"> 
