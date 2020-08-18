@@ -40,12 +40,12 @@ function showTemp(response) {
   let iconElement = document.querySelector("#weather-icon");
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 
   iconElement.setAttribute(
     "alt",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
   );
 }
 
@@ -62,7 +62,7 @@ function showForecast(response) {
   <h3> 
   ${formatHours(forecast.dt * 1000)} 
   </h3>
-  <img src="http://openweathermap.org/img/wn/${
+  <img src="https://openweathermap.org/img/wn/${
     forecast.weather[0].icon
   }@2x.png" alt="Forecast weather icon"/>
 <div class ="weather-forecast-temperature">
