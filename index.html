@@ -24,8 +24,8 @@
                 <div>
     
                         Humidity: <span id="humidity"> </span> %</br>
-                        Wind: <span id="wind"> </span> mph <br>
-                        <span id="description"> ☁️ </span>
+                        Wind: <span id="wind"> </span> kph <br>
+                        <span id="description"> </span>
                     </div>
         </h1>
         <br>
@@ -33,9 +33,10 @@
             <span id="city"></span> <br>
             <span id="currentTemp"></span><br> 
             <div class="clearfix scale">  <small>
-                <span id="fahrenheit" a href="#"> °F </span> |
-                <span id="celsius" a href="#" class="active">°C </span> </br></small>
-            <div id="time"> <br> </div>
+                <span id="celsius" a href="#" class="active">°C </span> |
+                <span id="fahrenheit" a href="#"> °F </span> <br>
+            </small>
+            <div id="date"> <small> Update at: </small> <br> </div>
             <div class= "weatherTempIcon"></div>
             <img src= "http://openweathermap.org/img/wn/01d@2x.png" alt = "" id ="weather-icon"> 
             
@@ -45,83 +46,7 @@
         <br>
         <br>
         <br>
-
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        Monday
-                        <br>
-                        07/06
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p> <strong> 75°</strong></p>
-                            <footer class="weather">⛈</footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        Tuesday
-                        <br>
-                        07/07
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p><strong>85°</strong></p>
-                            <footer class="weather">🌥</footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        Wednesday
-                        <br>
-                        07/08
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p> <strong> 80° </strong> </p>
-                            <footer class="weather">☀️</footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        Thrusday
-                        <br>
-                        07/09
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p><strong>90°</strong></p>
-                            <footer class="weather">🌤</footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        Friday
-                        <br>
-                        07/10
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p><strong>85°</strong></p>
-                            <footer class="weather">🌧</footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
+        <div class="row weather-forecast" id="forecast">
         </div>
 <br>
 <br>
